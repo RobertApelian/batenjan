@@ -1,0 +1,28 @@
+.page-tile {
+  flex: 1 1 50%;
+  min-width: 400px;
+  margin-bottom: -4px;
+  position: relative;
+}
+
+.page-tile-image {
+  opacity: .5;
+}
+
+.page-tile-title {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 64px;
+}
+
+.page-tile:hover {
+  color: rgba(0,0,0,0);
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.page-tile:hover .page-tile-image {
+  opacity: 1;
+  transition: all .3s;
+}

@@ -1,0 +1,60 @@
+
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: normal;
+  font-weight: 100;
+  src: local('vulf-mono light'), local('vulf-mono light'),
+       url('./vulf/Vulf_Mono-Light_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: italic;
+  font-weight: 100;
+  src: local('vulf-mono light'), local('vulf-mono light'),
+       url('./vulf/Vulf_Mono-Light_Italic_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('vulf-mono regular'), local('vulf-mono regular'),
+       url('./vulf/Vulf_Mono-Regular_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: italic;
+  font-weight: 400;
+  src: local('vulf-mono light'), local('vulf-mono light'),
+       url('./vulf/Vulf_Mono-Italic_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: normal;
+  font-weight: 600;
+  src: local('vulf-mono bold'), local('vulf-mono bold'),
+       url('./vulf/Vulf_Mono-Bold_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: italic;
+  font-weight: 600;
+  src: local('vulf-mono bold'), local('vulf-mono bold'),
+       url('./vulf/Vulf_Mono-Bold_Italic_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: normal;
+  font-weight: 900;
+  src: local('vulf-mono black'), local('vulf-mono black'),
+       url('./vulf/Vulf_Mono-Black_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+@font-face {
+  font-family: 'vulf-mono';
+  font-style: italic;
+  font-weight: 900;
+  src: local('vulf-mono black'), local('vulf-mono black'),
+       url('./vulf/Vulf_Mono-Black_Italic_web.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
