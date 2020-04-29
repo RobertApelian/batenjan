@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PageTile from './PageTile'
+import '../styles/vulfMono.css';
 
 const Main = (props) => {
 	return <div style={{display: 'flex', width: '100vw', flexWrap: 'wrap'}}>
