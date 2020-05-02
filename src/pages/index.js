@@ -15,7 +15,7 @@ const pages = [
     key: 1,
     title: 'commissions',
     image: Thumbnails.WorkThumb,
-    url: '/commissions'
+    url: 'https://ko-fi.com/robertapelian/commissions'
   },
   {
     key: 2,
