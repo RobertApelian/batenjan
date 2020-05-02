@@ -1,12 +1,12 @@
 .page-tile {
   flex: 1 1 50%;
   min-width: 400px;
-  margin-bottom: -5px;
   position: relative;
 }
 
 .page-tile-image {
   opacity: .5;
+  margin-bottom: -5px;
 }
 
 .page-tile-title {

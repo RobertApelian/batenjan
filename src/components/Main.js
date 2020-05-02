@@ -3,7 +3,7 @@ import PageTile from './PageTile'
 import '../styles/vulfMono.css';
 
 const Main = (props) => {
-	return <div style={{display: 'flex', width: '100vw', flexWrap: 'wrap'}}>
+	return <div style={{display: 'flex', width: '100%', flexWrap: 'wrap'}}>
 	{
   		props.pages.map(page => <PageTile page={page}/>)
 	}

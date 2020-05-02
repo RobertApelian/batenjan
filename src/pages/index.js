@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Thumbnails from '../images/images'
 import Main from '../components/Main'
+import Footer from '../components/Footer'
 import '../styles/App.css'
 
 const pages = [
@@ -34,6 +35,7 @@ const App = (props) => {
   return (
     <div style={{backgroundColor: '#343a34', color: 'rgb(255,255,255)', height: '100%', fontFamily: 'Vulf Mono'}}>
       <Main pages={pages}/>
+      <Footer />
     </div>
   )
 }
