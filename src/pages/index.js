@@ -6,24 +6,30 @@ import '../styles/App.css'
 const pages = [
   {
     key: 0,
+    title: '',
+    image: Thumbnails.Fustuk,
+    url: ''
+  },
+  {
+    key: 1,
     title: 'art',
     image: Thumbnails.ArtThumb,
     url: 'https://www.instagram.com/robertapelian/'
   },
   {
-    key: 1,
+    key: 2,
     title: 'shop',
     image: Thumbnails.ShopThumb,
     url:  'https://redbubble.com/people/robapelian/shop'
   },
   {
-    key: 2,
+    key: 3,
     title: 'videos',
     image: Thumbnails.VideoThumb,
     url: 'https://vimeo.com/user6798736'
   },
   {
-    key: 3,
+    key: 4,
     title: 'work',
     image: Thumbnails.WorkThumb,
     url: 'https://www.linkedin.com/in/robert-apelian-9178494b'
