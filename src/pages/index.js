@@ -18,22 +18,22 @@ const pages = [
   },
   {
     key: 2,
+    title: 'commissions',
+    image: Thumbnails.WorkThumb,
+    url: 'https://ko-fi.com/robertapelian/commissions'
+  },
+  {
+    key: 3,
     title: 'shop',
     image: Thumbnails.ShopThumb,
     url:  'https://redbubble.com/people/robapelian/shop'
   },
   {
-    key: 3,
+    key: 4,
     title: 'videos',
     image: Thumbnails.VideoThumb,
     url: 'https://vimeo.com/user6798736'
-  },
-  {
-    key: 4,
-    title: 'work',
-    image: Thumbnails.WorkThumb,
-    url: 'https://www.linkedin.com/in/robert-apelian-9178494b'
-  },
+  }
 ]
 
 const App = (props) => {
