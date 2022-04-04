@@ -4,8 +4,24 @@
   position: relative;
 }
 
+.page-tile-main {
+  flex: 1 1 50%;
+  min-width: 400px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-main-text {
+  min-width: 400px;
+}
+
 .page-tile-image {
   opacity: .5;
+  margin-bottom: -5px;
+}
+
+.page-tile-image-main {
   margin-bottom: -5px;
 }
 
@@ -16,6 +32,19 @@
   text-align: center;
   width: 100%;
   font-size: 64px;
+}
+
+.page-tile-description {
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  text-align: center;
+  font-style: italic;
+  font-size: 2.5vh;
+  background-color: rgba(0,0,0,.75);
+  padding: 10% 5%;
+  margin-top: 37vh;
+  height: 63vh;
 }
 
 .page-tile:hover {
@@ -40,6 +69,15 @@
 
 .scroll-section::-webkit-scrollbar {
   display: none;
+}
+
+.scroller {
+  position: fixed;
+  top: calc(100vh - 23px);
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  cursor: pointer;
 }
 
 a {
