@@ -26,7 +26,7 @@ class Scroller extends Component {
 	scrollDown = () => {
 		window.scrollBy({
 			left: 0, 
-			top: window.innerHeight,
+			top: 2*window.innerHeight,
 			behavior: 'smooth'
 		});
 	};

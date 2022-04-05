@@ -16,31 +16,37 @@ const pages = [
     title: 'fustuk-description',
     type: 'main-text',
     image: Thumbnails.FustukBackground,
-    text: `Fustuk is an upcoming graphic novel written and illustrated by me, coming out in 2025! About family, food, and cultural identity in a diaspora, it follows the youngest of three dysfunctional siblings in a family of chefs who strike a deal with a Djinn to save their dying mother — but only if they can step out of the shadow of their legendary father and cook a dish to rival his.`
+    text: <p><b><i>Fustuk</i></b> is an upcoming graphic novel written and illustrated by me about family, food, and cultural identity in a diaspora.<br/>It follows the youngest of three dysfunctional siblings in a family of chefs who strike a deal with a Djinn to save their dying mother — but only if they can step out of the shadow of their legendary father and cook a dish to rival his.<br/><br/><i>Fustuk</i> is being published by the fine folks at Penguin Random House for release in 2025!</p>
   },
   {
     key: 2,
+    title: 'about rob',
+    image: Thumbnails.FustukSeperator,
+    type: 'seperator'
+  },
+  {
+    key: 3,
     title: 'instagram',
     image: Thumbnails.ArtThumb,
     url: 'https://www.instagram.com/robertapelian/',
     type: 'thumb'
   },
   {
-    key: 3,
+    key: 4,
     title: 'twitter',
     image: Thumbnails.TwitterThumb,
     url: 'https://twitter.com/rob_a_pelican',
     type: 'thumb'
   },
   {
-    key: 4,
+    key: 5,
     title: 'shop',
     image: Thumbnails.ShopThumb,
     url:  'https://redbubble.com/people/robapelian/shop',
     type: 'thumb'
   },
   {
-    key: 5,
+    key: 6,
     title: 'commissions',
     image: Thumbnails.WorkThumb,
     url: 'https://ko-fi.com/robertapelian/commissions',

@@ -2,8 +2,9 @@ import ArtThumb from './art.png'
 import TwitterThumb from './twitter.png'
 import WorkThumb from './work.png'
 import ShopThumb from './shop.png'
-import Fustuk from './fustuk2.jpg'
-import FustukBackground from './fustuk.png'
+import Fustuk from './fustuk2.png'
+import FustukBackground from './border.png'
+import FustukSeperator from './seperator.png'
 
 export default {
 	ArtThumb,
@@ -11,5 +12,6 @@ export default {
 	WorkThumb,
 	ShopThumb,
 	Fustuk,
-	FustukBackground
+	FustukBackground,
+	FustukSeperator
 }
