@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import PageTile from './PageTile'
 import '../styles/vulfMono.css';
 
 class Scroller extends Component {

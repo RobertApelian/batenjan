@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PageTile from './PageTile'
 import '../styles/vulfMono.css';
 import '../styles/ebGaramond.css';

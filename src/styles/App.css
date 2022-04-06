@@ -40,9 +40,24 @@
   font-family: "EB Garamond";
   text-align: center;
   font-size: 3vh;
-  background: linear-gradient(0, rgba(0,0,0,0), rgba(0,0,0,.69) 25%,rgba(0,0,0,.69) 75%, rgba(0,0,0,0));
+  background: linear-gradient(0, rgba(0,0,0,0), rgba(0,0,0,.75) 22%,rgba(0,0,0,.75) 78%, rgba(0,0,0,0));
   padding: 10% 5%;
   margin-top: 20%;
+}
+
+.scrolling-background {
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+  animation: imageScroll 80s linear infinite;
+}
+
+@keyframes imageScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
 }
 
 .page-tile-seperator {

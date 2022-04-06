@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Thumbnails from '../images/images'
 
 class PageTile extends Component {
   render() {
@@ -9,15 +8,13 @@ class PageTile extends Component {
               <div className='page-tile-main' style={{backgroundImage: `url(${this.props.page.image})`}} key={this.props.page.title}>
               </div>
             );
-        break;
 
       case 'main-text':
         return  (
-              <div className='page-tile-main' style={{backgroundImage: `url(${this.props.page.image})`}} key={this.props.page.title}>
+              <div className='page-tile-main scrolling-background' style={{backgroundImage: `url(${this.props.page.image})`}} key={this.props.page.title}>
                 <div className='page-tile-description'> {this.props.page.text} </div>
               </div>
             );
-        break;
 
       case 'seperator':
         return  (
@@ -25,7 +22,6 @@ class PageTile extends Component {
                 <i className='page-seperator-title'> {this.props.page.title} </i>
               </div>
             );
-        break;
 
       default:
         return (
