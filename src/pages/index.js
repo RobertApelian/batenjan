@@ -16,11 +16,11 @@ const pages = [
     title: 'fustuk-description',
     type: 'main-text',
     image: Thumbnails.FustukBackground,
-    text: <p><b><i>Fustuk</i></b> is an upcoming graphic novel written and illustrated by me about family, food, and cultural identity in a diaspora.<br/>It follows the youngest of three dysfunctional siblings in a family of chefs who strike a deal with a Djinn to save their dying mother — but only if they can step out of the shadow of their legendary father and cook a dish to rival his.<br/><br/><i>Fustuk</i> is being published by the fine folks at Penguin Random House for release in 2025!<br/><br/><br/>(sample pages shown behind do not represent final art)</p>
-  },
+    text: <p><b><i>Fustuk</i></b> is an upcoming graphic novel written and illustrated by me about family, food, and cultural identity in a diaspora.<br/>Set in a fantastical version of the Persian Empire, it follows the youngest of three dysfunctional siblings in a family of chefs who strike a deal with a Djinn to save their dying mother — but only if they can step out of the shadow of their legendary father and cook a dish to rival his.<br/><br/>Follow me on Twitter and Instagram (below) for progress, updates, and lots of art!</p>
+  },//<i>Fustuk</i> is being published by the fine folks at Penguin Random House for release in 2025!<br/><br/><br/>(sample pages shown behind do not represent final art)
   {
     key: 2,
-    title: 'about rob',
+    title: '',//'socials, shop and more ▼',
     image: Thumbnails.FustukSeperator,
     type: 'seperator'
   },

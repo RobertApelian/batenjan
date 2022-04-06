@@ -12,6 +12,7 @@
   },
   "scripts": {
     "deploy": "gh-pages -d build",
+    "deploy": "qa -d build",
     "start": "gatsby develop",
     "build": "gatsby build"
   }

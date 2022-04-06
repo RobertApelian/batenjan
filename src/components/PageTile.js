@@ -12,6 +12,7 @@ class PageTile extends Component {
       case 'main-text':
         return  (
               <div className='page-tile-main scrolling-background' style={{backgroundImage: `url(${this.props.page.image})`}} key={this.props.page.title}>
+                <div className='page-tile-description-backdrop'> {this.props.page.text} </div>
                 <div className='page-tile-description'> {this.props.page.text} </div>
               </div>
             );
