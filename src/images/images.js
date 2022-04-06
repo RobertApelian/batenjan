@@ -1,11 +1,17 @@
 import ArtThumb from './art.png'
-import VideoThumb from './video.png'
+import TwitterThumb from './twitter.png'
 import WorkThumb from './work.png'
 import ShopThumb from './shop.png'
+import Fustuk from './fustuk2.png'
+import FustukBackground from './fustuksamplepages.png'
+import FustukSeperator from './seperator.png'
 
 export default {
 	ArtThumb,
-	VideoThumb,
+	TwitterThumb,
 	WorkThumb,
-	ShopThumb
+	ShopThumb,
+	Fustuk,
+	FustukBackground,
+	FustukSeperator
 }

@@ -1,6 +1,6 @@
 {
   "name": "batenjan",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "gatsby": "^2.21.0",
@@ -11,6 +11,7 @@
   },
   "scripts": {
     "deploy": "gh-pages -d build",
+    "deploy:qa": "qa -d build",
     "start": "gatsby develop",
     "build": "gatsby build"
   }
