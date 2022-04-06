@@ -1,12 +1,11 @@
 {
   "name": "batenjan",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "gatsby": "^2.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-images-viewer": "^1.6.2",
     "react-scripts": "^3.4.1",
     "serve": "^11.3.0"
   },
