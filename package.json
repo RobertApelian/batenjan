@@ -10,7 +10,7 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths"
   }
