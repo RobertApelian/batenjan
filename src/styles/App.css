@@ -61,7 +61,7 @@
 .scrolling-background {
   background-position: 0px 0px;
   background-repeat: repeat-y;
-  animation: imageScroll 120s linear infinite;
+  animation: imageScroll 180s linear infinite;
 }
 
 @keyframes imageScroll {
