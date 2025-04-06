@@ -1,13 +1,13 @@
 import React from 'react'
-import PageTile from './PageTile'
+import Cover from './Cover'
+import Text from './Text'
 import '../styles/vulfMono.css';
 import '../styles/ebGaramond.css';
 
-const Main = (props) => {
+const Main = () => {
 	return <div style={{display: 'flex', width: '100%', flexWrap: 'wrap'}}>
-	{
-  		props.pages.map(page => <PageTile page={page}/>)
-	}
+  		<Cover />
+        <Text />
 	</div>
 }
 
