@@ -7,7 +7,7 @@ export default() =>
    className='titleVector'
    preserveAspectRatio="none"
    viewBox="0 0 363.77332 139.62666"
-   style={{filter: 'drop-shadow(rgba(0, 0, 0, .5) 10px 5px)'}}>
+   style={{filter: 'drop-shadow(rgba(0, 0, 0, .5) 5px 10px)'}}>
   <defs
      id="defs6" />
   <g
