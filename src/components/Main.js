@@ -30,7 +30,7 @@ const pages = [
 
 const Main = () => {
     const [index, setIndex] = useState(1);
-	return <SwipeableViews index={index} onChangeIndex={setIndex}>
+	return <SwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
         {pages.map((page, i) => 
             <div style={{display: 'flex', width: '100%', justifyContent: 'center', userSelect: 'none'}}>
                 <Navigation isLeft page={pages[i > 0 ? i-1 : 2]} setIndex={setIndex}/>

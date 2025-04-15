@@ -11,7 +11,7 @@ of the Middle East and to portray it as something
 other than tragic and war-torn.`;
 
 const Cover = () => {
-	return <div style={{backgroundColor: '#d3ab6a', margin: '0px 200px', maxWidth: '500px', height: '100vh'}}>
+	return <div style={{backgroundColor: '#d3ab6a', margin: '0px 20%', maxWidth: '500px', height: '100vh', borderRight: '3px solid #292e7b', borderLeft: '3px solid #292e7b'}}>
 		<img alt='Author self portrait' width='100%' src={Me}/>
         <div style={{fontFamily: 'EB Garamond', fontSize: '2em', textAlign: 'center', color: '#292e7b'}}>{AuthorText}</div>
     </div>

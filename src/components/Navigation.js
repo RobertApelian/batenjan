@@ -1,5 +1,5 @@
-import React from 'react'
-import Corner from '../images/corner.png'
+import React, {useState} from 'react';
+import Corner from '../images/corner.png';
 
 const Navigation = ({page, isLeft, setIndex}) => {
     const pagePreview = <div style={{
@@ -8,6 +8,7 @@ const Navigation = ({page, isLeft, setIndex}) => {
         right: isLeft && '150px',
         left: !isLeft && '150px',
         width: '500px',
+        overflow: 'hidden',
         opacity: .5}}>
         {page.component}
     </div>;
