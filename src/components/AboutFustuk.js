@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import CharacterPage from './CharacterPage';
 import PageButton from './PageButton';
+import FamilyTree from './FamilyTree';
 
 import Katah  from '../images/Katah.png'
 import Noori  from '../images/Noori.png'
 import Garo  from '../images/Garo.png'
 import Anoush  from '../images/Anoush.png'
-import Cover from '../images/covermain.png'
+import Tsoren from '../images/Tsoren.png'
 
 const coverCopy = [
     'Seventeen-year-old Katah Fustukian has always felt like the odd one out in his family of chefs. Unlike his older siblings, he is useless in the kitchen, and too young to have known their late father—a legendary Hye chef who’d made a name for himself in the Pars Empire.',
@@ -56,17 +57,20 @@ const pages = [
         title: 'Mom',
         picture: Anoush,
         quote: [`I know, I know. I shouldn't have pushed myself.`, ` I just... wanted it to be special.`, `We don't all get together that much anymore.`]
+    },
+    {
+        name: 'Tsoren Fustukian',
+        subtitle: '',
+        age: '46 (then)',
+        title: 'Dad',
+        picture: Tsoren,
+        quote: []
     }
 ];
 
 const AboutFustuk = () => {
-    const [currentPage, setPage] = useState(0);
 	return <div style={{height: '100vh', backgroundColor: 'rgba(0,0,0,.7)', color: '#FFFFFF', width: '80vw', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
-        <CharacterPage {...pages[currentPage]} />
-        <div style={{display: 'flex', width: '100%'}}>
-        {pages.map((page, i) =>
-            <PageButton page={page} onClick={() => setPage(i)} />)}
-        </div>
+        <CharacterPage {...pages[0]} />
 	</div>
 }
 

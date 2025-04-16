@@ -54,6 +54,31 @@ body {
     width: 100%;
   }
 
+  .hconnector {
+    background-color: #d3ab6a;
+    width: 10vw;
+    height: 4px;
+  }
+
+  .vconnector {
+    background-color: #d3ab6a;
+    width: 4px;
+    height: 15vh;
+    margin-top: calc(-7vh - 4px);
+  }
+  
+  .treeNode {
+    width: 10vh;
+    height: 14vh;
+    border: 5px #d3ab6a solid;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .treeNode:hover {
+    background-color: rgba(255,255,255,.3);
+    transition: background-color 300ms;
+  }
+
   .button {
     width: -webkit-fill-available;
     padding: 20px;
@@ -66,7 +91,7 @@ body {
 
   .button:hover {
     background-color: rgba(255,255,255,.1);
-    -webkit-transition: background-color 300ms;
+    transition: background-color 300ms;
   }
   
   @media only screen and (max-width: 760px){

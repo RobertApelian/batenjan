@@ -1,0 +1,46 @@
+import React from 'react'
+
+const FamilyTreeNode = ({currentChar, char, onClick}) => {
+    const isSelected = currentChar == char.key;
+    const selectedStyle = isSelected ? {
+        height: '100%',
+        width: '100%',
+        transition: 'all 300ms',
+        display: 'flex',
+        justifyContent: 'center'
+    } :
+    {};
+	return currentChar && !isSelected ? 
+        <div></div> :
+        <div style={{width: isSelected && '100%'}}>
+            {char.family ? 
+                <div style={{display: 'flex'}} onClick={onClick}>
+                    <div className='treeNode' style={selectedStyle}>
+                        <img style={{height: '56vh', ...(!isSelected && char.styles)}} src={char.picture} />
+                    </div>
+                    {!currentChar && 
+                    <div className='treeNode' style={{position: 'absolute', marginLeft: 'calc(10vh + 5px)'}}>
+                        <img style={{height: '56vh', ...char.family[0].styles}} src={char.picture} />
+                    </div>}
+                    {!currentChar && 
+                    <div className='treeNode' style={{position: 'absolute', marginLeft: 'calc(5vh + 5px)', marginTop: 'calc(14vh + 5px)'}}>
+                        <img style={{height: '56vh', ...char.family[1].styles}} src={char.picture} />
+                    </div>}
+                </div> :
+                <div className='treeNode' style={selectedStyle} onClick={onClick}>
+                    <img style={{height: '56vh', ...(!isSelected && char.styles)}} src={char.picture} />
+                </div>
+            }
+            {isSelected && <div style={{width: '100%', fontFamily: 'EB Garamond', color: '#d3ab6a', backgroundColor: 'rgba(0,0,0,.5)'}}>
+                <div style={{fontSize: '4em', marginBottom: '15px'}}>{char.name}</div>
+                <div>{char.subtitle}</div>
+                <div>{char.age}</div>
+                {char.quote && char.quote.map(line => 
+                <div style={{width: '70%', fontSize: '1.5em', textAlign: 'center', margin:'15px'}}>
+                    {line}
+                </div>)}
+            </div>}
+        </div>
+}
+
+export default FamilyTreeNode;
