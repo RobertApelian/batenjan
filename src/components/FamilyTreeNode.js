@@ -31,10 +31,10 @@ const FamilyTreeNode = ({currentChar, char, onClick}) => {
                     <img style={{height: '56vh', ...(!isSelected && char.styles)}} src={char.picture} />
                 </div>
             }
-            {isSelected && <div style={{width: '100%', fontFamily: 'EB Garamond', color: '#d3ab6a', backgroundColor: 'rgba(0,0,0,.5)'}}>
-                <div style={{fontSize: '4em', marginBottom: '15px'}}>{char.name}</div>
-                <div>{char.subtitle}</div>
-                <div>{char.age}</div>
+            {isSelected && <div style={{width: '100%', fontFamily: 'EB Garamond', fontSize: '1.5em', color: '#d3ab6a', backgroundColor: 'rgba(0,0,0,.5)'}}>
+                <div style={{fontSize: '2.5em'}}>{char.name}</div>
+                <div style={{marginLeft: '10px', fontSize: '.9em'}}>{char.subtitle}</div>
+                <div style={{marginLeft: '10px', fontSize: '1.5em'}}>{char.title} - {char.age}</div>
                 {char.quote && char.quote.map(line => 
                 <div style={{width: '70%', fontSize: '1.5em', textAlign: 'center', margin:'15px'}}>
                     {line}

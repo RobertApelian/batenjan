@@ -30,10 +30,10 @@ const chars = [
         name: 'Katah Fustukian',
         subtitle: '',
         age: '6 months (then), 17 years (now)',
-        title: 'Katah',
+        title: 'Me',
         picture: Katah,
         styles: {marginLeft: '-17vh', marginTop: '-6vh'},
-        quote: ['I never knew my father... but I have dreams of him.', `They're like memories that don't belong to me. They can't.`, 'And yet every day, it seems...', 'These memories are getting clearer.']
+        quote: []
     },
     {
         key: 2,
@@ -43,7 +43,7 @@ const chars = [
         title: 'Big Sister',
         picture: Noori,
         styles: {marginLeft: '-32vh', marginTop: '-4vh'},
-        quote: [`I won't accept that limiting ourselves to a certain set of ingredients and tools just because we're Hye was a meaningful part of our father's beliefs.`, `His love of his craft - and hunger for success - that's what made him such a legend.`]
+        quote: []
     },
     {
         key: 3,
@@ -53,7 +53,7 @@ const chars = [
         title: 'Big Brother',
         picture: Garo,
         styles: {marginLeft: '-25vh'},
-        quote: [`I'm not trying to pick fights, but it frustrates me that it doesn't seem like any of you care.`, `It's not just about the food. It's our identity - our history! It's important!`],
+        quote: [],
         family: [
             {
                 name: 'Talar',
@@ -73,7 +73,7 @@ const chars = [
         title: 'Mom',
         picture: Anoush,
         styles: {marginLeft: '-16vh'},
-        quote: [`I know, I know. I shouldn't have pushed myself.`, ` I just... wanted it to be special.`, `We don't all get together that much anymore.`]
+        quote: []
     },
     {
         key: 5,
