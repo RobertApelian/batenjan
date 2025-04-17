@@ -1,6 +1,6 @@
 {
   "name": "batenjan",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "gatsby": "^2.21.0",
@@ -13,6 +13,7 @@
   "scripts": {
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths"
+    "build": "gatsby build --prefix-paths",
+    "cleanup": "gatsby clean"
   }
 }
