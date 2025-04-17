@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FamilyTreeNode = ({currentChar, char, onClick, isMobile}) => {
+const FamilyTreeNode = ({currentChar, char, onClick}) => {
     const isSelected = currentChar === char.key;
     const selectedStyle = isSelected ? {
         height: '100%',
@@ -18,12 +18,12 @@ const FamilyTreeNode = ({currentChar, char, onClick, isMobile}) => {
                     <div className='treeNode' style={selectedStyle}>
                         <img style={{height: '56vh', ...(!isSelected && char.styles)}} src={char.picture} />
                     </div>
-                    {!currentChar && !isMobile && 
-                    <div className='treeNode' style={{position: 'absolute', marginLeft: 'calc(10vh + 5px)'}}>
+                    {!currentChar && 
+                    <div className='treeNode familyNode' style={{position: 'absolute', marginLeft: 'calc(10vh + 5px)'}}>
                         <img style={{height: '56vh', ...char.family[0].styles}} src={char.picture} />
                     </div>}
-                    {!currentChar && !isMobile && 
-                    <div className='treeNode' style={{position: 'absolute', marginLeft: 'calc(5vh + 5px)', marginTop: 'calc(14vh + 5px)'}}>
+                    {!currentChar && 
+                    <div className='treeNode familyNode' style={{position: 'absolute', marginLeft: 'calc(5vh + 5px)', marginTop: 'calc(14vh + 5px)'}}>
                         <img style={{height: '56vh', ...char.family[1].styles}} src={char.picture} />
                     </div>}
                 </div> :

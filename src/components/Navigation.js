@@ -13,18 +13,7 @@ const Navigation = ({page, isLeft, setIndex}) => {
         {page.component}
     </div>;
 
-	return <div style={{
-        height: '100vh',
-        width: '100%',
-        display: 'flex',
-        justifyContent: isLeft ? 'flex-end' : 'flex-start',
-        position: 'relative',
-        backgroundColor: 'rgba(0,0,0,.5)',
-        cursor: 'pointer',
-        overflow: 'hidden'
-    }}
-            
-    onClick={() => setIndex(page.id)}> 
+	return <div className='navigation' style={{justifyContent: isLeft ? 'flex-end' : 'flex-start'}} onClick={() => setIndex(page.id)}> 
         {isLeft && pagePreview}
         <div style={{
             backgroundColor: '#d3ab6a',

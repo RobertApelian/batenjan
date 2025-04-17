@@ -46,7 +46,7 @@ const chars = [
         title: 'Big Sister',
         picture: Noori,
         styles: {marginLeft: '-32vh', marginTop: '-4vh'},
-        quote: <div>
+        quote: <div style={{marginTop: '-30px', marginBottom: '-30px'}}>
             <div>Now, I know what you're thinking.</div>
             <div>"Isn't it <b><i>imbalanced</i></b>, Noori? Isn't somethign missing?"</div>
             <div>Something sweet to bring out the umami flavor of the meat!</div>
@@ -109,7 +109,7 @@ const FamilyTree = () => {
     const isMobile = window.screen.availWidth < 800;
     const [currentChar, setChar] = useState(0);
 	return <div className='familyTreeContainer' style={{transition: 'background-color .5s', backgroundColor: `rgba(0,0,0,${currentChar ? '.6' : '.3'})`}}>
-        <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: isMobile ? '4em' : '5em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
+        <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: '4em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
             <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar === 5 ? 0 : 5)}/>
             {!currentChar && <div className='hconnector' />}
@@ -124,7 +124,7 @@ const FamilyTree = () => {
         <div className='treeChildrenContainer'>
             <FamilyTreeNode currentChar={currentChar} char={chars[2]} onClick={() => setChar(currentChar === 2 ? 0 : 2)}/>
             <FamilyTreeNode currentChar={currentChar} char={chars[1]} onClick={() => setChar(currentChar === 1 ? 0 : 1)}/>
-            <FamilyTreeNode isMobile={isMobile} currentChar={currentChar} char={chars[3]} onClick={() => setChar(currentChar === 3 ? 0 : 3)}/>
+            <FamilyTreeNode currentChar={currentChar} char={chars[3]} onClick={() => setChar(currentChar === 3 ? 0 : 3)}/>
         </div>
     </div>
 }
