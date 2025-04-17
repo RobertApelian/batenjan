@@ -29,31 +29,42 @@ const chars = [
         key: 1,
         name: 'Katah Fustukian',
         subtitle: '',
-        age: '6 months (then), 17 years (now)',
+        age: '17 (now), 6 months (then)',
         title: 'Main Character',
         picture: Katah,
         styles: {marginLeft: '-17vh', marginTop: '-6vh'},
-        quote: []
+        quote: <div>
+            <div>Mom, I know you're excited to have everyone home, but shouldn't you be taking it easy?</div>
+            <div>Easier than <b><i>this?</i></b></div>
+            </div>
     },
     {
         key: 2,
         name: 'Noori Fustukian',
         subtitle: '',
-        age: '13 (then), 30 (now)',
+        age: '30 (now), 13 (then)',
         title: 'Big Sister',
         picture: Noori,
         styles: {marginLeft: '-32vh', marginTop: '-4vh'},
-        quote: []
+        quote: <div>
+            <div>Now, I know what you're thinking.</div>
+            <div>"Isn't it <b><i>imbalanced</i></b>, Noori? Isn't somethign missing?"</div>
+            <div>Something sweet to bring out the umami flavor of the meat!</div>
+            <div>Something sour to brighten the spices and broth!</div>
+            <div style={{fontSize: '.7em'}}><i>...Nobody's thinking that...</i></div>
+        </div>
     },
     {
         key: 3,
         name: 'Garaked (Garo) Fustukian',
         subtitle: 'and his wife Talar and daughter Tsorineh',
-        age: '11 (then), 29 (now)',
+        age: '29 (now), 11 (then)',
         title: 'Big Brother',
         picture: Garo,
         styles: {marginLeft: '-25vh'},
-        quote: [],
+        quote: <div>
+            <b><i>Rela<span style={{verticalAlign: 'middle'}}>a</span>ax</i></b>, you two, this should be easy! I cook Dad's recipes all the time.
+        </div>,
         family: [
             {
                 name: 'Talar',
@@ -69,11 +80,14 @@ const chars = [
         key: 4,
         name: 'Anoush Fustukian',
         subtitle: '',
-        age: '37 (then), 54 (now)',
+        age: '54 (now), 37 (then)',
         title: 'Mom',
         picture: Anoush,
         styles: {marginLeft: '-16vh'},
-        quote: []
+        quote: <div>
+            <div>Dghas, you don't have to be a cook.</div>
+            <div>Lord knows the family has <b><i>enough</i></b> of those.</div>
+        </div>
     },
     {
         key: 5,
@@ -83,7 +97,7 @@ const chars = [
         title: 'Dad',
         picture: Tsoren,
         styles: {marginLeft: '-10vh'},
-        quote: []
+        quote: <div>...</div>
     }
 ];
 
@@ -94,7 +108,7 @@ const chars = [
 const FamilyTree = () => {
     const isMobile = window.screen.availWidth < 800;
     const [currentChar, setChar] = useState(0);
-	return <div className='familyTreeContainer'>
+	return <div className='familyTreeContainer' style={{transition: 'background-color .5s', backgroundColor: `rgba(0,0,0,${currentChar ? '.6' : '.3'})`}}>
         <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: isMobile ? '4em' : '5em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
             <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar === 5 ? 0 : 5)}/>

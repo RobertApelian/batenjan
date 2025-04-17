@@ -31,14 +31,15 @@ const FamilyTreeNode = ({currentChar, char, onClick, isMobile}) => {
                     <img style={{height: '56vh', ...(!isSelected && char.styles)}} src={char.picture} />
                 </div>
             }
-            {isSelected && <div style={{width: '100%', fontFamily: 'EB Garamond', fontSize: '1.5em', color: '#d3ab6a', backgroundColor: 'rgba(0,0,0,.5)'}}>
-                <div style={{fontSize: '2.5em'}}>{char.name}</div>
+            {isSelected && <div style={{width: '100%', textAlign: 'center', fontFamily: 'EB Garamond', fontSize: '1.5em', color: '#d3ab6a'}}>
+                <div style={{fontSize: '2em'}}>{char.name}</div>
                 <div style={{marginLeft: '10px', fontSize: '.9em'}}>{char.subtitle}</div>
-                <div style={{marginLeft: '10px', fontSize: '1.5em'}}>{char.title} - {char.age}</div>
-                {char.quote && char.quote.map(line => 
-                <div style={{width: '70%', fontSize: '1.5em', textAlign: 'center', margin:'15px'}}>
-                    {line}
-                </div>)}
+                <div style={{marginLeft: '10px', fontSize: '1em'}}>{char.age}</div>
+                <div style={{fontSize: '1em', textAlign: 'left', margin:'15px'}}>
+                    <div style={{fontSize: '4em', marginBottom: '-30px'}}>“</div>
+                    <div style={{margin: '0px 15px', justifyContent: 'center', display:'flex'}}>{char.quote}</div>
+                    <div style={{fontSize: '4em', textAlign: 'right'}}>” </div>
+                </div>
             </div>}
         </div>
 }
