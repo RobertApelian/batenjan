@@ -15,6 +15,8 @@ const coverCopy = [
     'Creator Robert Mgrdich Apelian weaves together multiple timelines in an inventive, fantastical story of Armenian family and food, speaking to diasporic culture and how those within it relate to their different worlds.'
 ];
 
+const isMobile = window.screen.availWidth < 800;
+
 const chars = [
     {
         key: 0,
@@ -30,7 +32,7 @@ const chars = [
         name: 'Katah Fustukian',
         subtitle: '',
         age: '6 months (then), 17 years (now)',
-        title: 'Me',
+        title: 'Main Character',
         picture: Katah,
         styles: {marginLeft: '-17vh', marginTop: '-6vh'},
         quote: []
@@ -54,7 +56,7 @@ const chars = [
         picture: Garo,
         styles: {marginLeft: '-25vh'},
         quote: [],
-        family: [
+        family: !isMobile && [
             {
                 name: 'Talar',
                 styles: {marginLeft: '-38vh', marginTop: '-5vh'}
@@ -93,8 +95,8 @@ const chars = [
 
 const FamilyTree = () => {
     const [currentChar, setChar] = useState(0);
-	return <div style={{width: '500vw', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '5vh 10vh 0', backgroundColor: 'rgba(0,0,0,.4)'}}>
-        <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: '5em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
+	return <div className='familyTreeContainer'>
+        <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: isMobile ? '4em' : '5em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
             <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar == 5 ? 0 : 5)}/>
             {!currentChar && <div className='hconnector' />}
@@ -102,11 +104,11 @@ const FamilyTree = () => {
         </div>
         {!currentChar && <div className='vconnector' />}
         {!currentChar && <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
-            <div style={{height: '10vh', width: '19vw', borderTop: '5px #d3ab6a solid', borderLeft: '5px #d3ab6a solid'}} />
-            <div style={{height: '10vh', width: '19vw', borderTop: '5px #d3ab6a solid', borderLeft: '5px #d3ab6a solid'}} />
+            <div className='childConnector' />
+            <div className='childConnector'/>
             <div style={{height: 'calc(10vh + 5px)', borderLeft: '5px #d3ab6a solid'}} />
         </div>}
-        <div  style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', width: '100%'}}>
+        <div className='treeChildrenContainer'>
             <FamilyTreeNode currentChar={currentChar} char={chars[2]} onClick={() => setChar(currentChar == 2 ? 0 : 2)}/>
             <FamilyTreeNode currentChar={currentChar} char={chars[1]} onClick={() => setChar(currentChar == 1 ? 0 : 1)}/>
             <FamilyTreeNode currentChar={currentChar} char={chars[3]} onClick={() => setChar(currentChar == 3 ? 0 : 3)}/>

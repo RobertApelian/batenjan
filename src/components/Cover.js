@@ -6,8 +6,9 @@ const Cover = () => {
 	return <div className='coverContainer'>
 		<div className='titleContainer'>
 			<TitleVector />
+			<div className='comingSoon'>Coming January 2026</div>
 		</div>
-		<img alt='Fustuk book cover' src={CoverArt} style={{filter: 'drop-shadow(rgba(0, 0, 0, .5) 5px 10px)', height: '85%', margin: '-5% 0 0 0'}}/>
+		<img alt='Fustuk book cover' src={CoverArt} className='coverImage'/>
 	</div>
 }
 

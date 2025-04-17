@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import SwipeableViews from 'react-swipeable-views';
 
-
 import Cover from './Cover';
 import Author from './Author';
 import AboutFustuk from './AboutFustuk';
@@ -9,6 +8,8 @@ import FamilyTree from './FamilyTree';
 import Navigation from './Navigation';
 import Recipes from './Recipes';
 import '../styles/ebGaramond.css';
+
+const isMobile = window.screen.availWidth < 800;
 
 const pages = [
     {
@@ -44,9 +45,9 @@ const Main = () => {
 	return <SwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
         {pages.map((page, i) => 
             <div style={{display: 'flex', width: '100%', justifyContent: 'center', userSelect: 'none'}}>
-                <Navigation isLeft page={pages[i > 0 ? i-1 : pages.length-1]} setIndex={setIndex}/>
+                {!isMobile && <Navigation isLeft page={pages[i > 0 ? i-1 : pages.length-1]} setIndex={setIndex}/>}
                 {page.component}
-                <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>
+                {!isMobile && <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>}
             </div>
         )}
     </SwipeableViews>

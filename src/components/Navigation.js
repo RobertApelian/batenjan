@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Corner from '../images/corner.png';
 
 const Navigation = ({page, isLeft, setIndex}) => {
