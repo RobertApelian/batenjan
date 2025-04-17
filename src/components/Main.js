@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import SwipeableViews from 'react-swipeable-views';
+import { bindKeyboard } from 'react-swipeable-views-utils';
 
 import Cover from './Cover';
 import Author from './Author';
@@ -37,10 +38,11 @@ const pages = [
     }
 ];
 
+const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 const Main = () => {
     const [index, setIndex] = useState(1);
-	return <SwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
+	return <BindKeyboardSwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
         {pages.map((page, i) => 
             <div style={{display: 'flex', width: '100%', height: '100%', minHeight: 'fit-content', justifyContent: 'center', userSelect: 'none'}}>
                 <Navigation isLeft page={pages[i > 0 ? i-1 : pages.length-1]} setIndex={setIndex}/>
@@ -48,7 +50,7 @@ const Main = () => {
                 <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>
             </div>
         )}
-    </SwipeableViews>
+    </BindKeyboardSwipeableViews>
 }
 
 export default Main;
