@@ -48,7 +48,7 @@ const chars = [
         styles: {marginLeft: '-32vh', marginTop: '-4vh'},
         quote: <div style={{marginTop: '-30px', marginBottom: '-30px'}}>
             <div>Now, I know what you're thinking.</div>
-            <div>"Isn't it <b><i>imbalanced</i></b>, Noori? Isn't somethign missing?"</div>
+            <div>"Isn't it <b><i>imbalanced</i></b>, Noori? Isn't something missing?"</div>
             <div>Something sweet to bring out the umami flavor of the meat!</div>
             <div>Something sour to brighten the spices and broth!</div>
             <div style={{fontSize: '.7em'}}><i>...Nobody's thinking that...</i></div>

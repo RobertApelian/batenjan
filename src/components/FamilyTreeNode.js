@@ -32,6 +32,7 @@ const FamilyTreeNode = ({currentChar, char, onClick}) => {
                 </div>
             }
             {isSelected && <div style={{width: '100%', textAlign: 'center', fontFamily: 'EB Garamond', fontSize: '1.5em', color: '#d3ab6a'}}>
+                <div className='textLink' onClick={onClick}>{'◀ Back to tree'}</div>
                 <div style={{fontSize: '2em'}}>{char.name}</div>
                 <div style={{marginLeft: '10px', fontSize: '.9em'}}>{char.subtitle}</div>
                 <div style={{marginLeft: '10px', fontSize: '1em'}}>{char.age}</div>

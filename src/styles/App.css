@@ -119,6 +119,18 @@ body {
     background-color: rgba(255,255,255,.3);
     transition: background-color 300ms;
   }
+  
+  .textLink {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .textLink:hover {
+    color: white;
+    transition: color 300ms;
+  }
 
   .button {
     width: -webkit-fill-available;
