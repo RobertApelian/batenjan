@@ -91,7 +91,8 @@ const chars = [
 //and then the sidebar always exists but also is hidden and expands which is also animated?
 
 
-const FamilyTree = (isMobile) => {
+const FamilyTree = () => {
+    const isMobile = window.screen.availWidth < 800;
     const [currentChar, setChar] = useState(0);
 	return <div className='familyTreeContainer'>
         <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: isMobile ? '4em' : '5em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>

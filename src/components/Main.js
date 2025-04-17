@@ -42,13 +42,12 @@ const Main = () => {
     const isMobile = window.screen.availWidth < 800;
     const [index, setIndex] = useState(1);
 	return <SwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
-        {pages.map((page, i) => {
-            page.component.props = {isMobile: isMobile}
-            return <div style={{display: 'flex', width: '100%', justifyContent: 'center', userSelect: 'none'}}>
+        {pages.map((page, i) => 
+            <div style={{display: 'flex', width: '100%', height: '100%', minHeight: 'fit-content', justifyContent: 'center', userSelect: 'none'}}>
                 {!isMobile && <Navigation isLeft page={pages[i > 0 ? i-1 : pages.length-1]} setIndex={setIndex}/>}
                 {page.component}
                 {!isMobile && <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>}
-            </div>}
+            </div>
         )}
     </SwipeableViews>
 }
