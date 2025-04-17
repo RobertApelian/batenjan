@@ -1,7 +1,7 @@
 import React from 'react'
 
 const FamilyTreeNode = ({currentChar, char, onClick}) => {
-    const isSelected = currentChar == char.key;
+    const isSelected = currentChar === char.key;
     const selectedStyle = isSelected ? {
         height: '100%',
         width: '100%',
