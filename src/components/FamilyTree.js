@@ -15,8 +15,6 @@ const coverCopy = [
     'Creator Robert Mgrdich Apelian weaves together multiple timelines in an inventive, fantastical story of Armenian family and food, speaking to diasporic culture and how those within it relate to their different worlds.'
 ];
 
-const isMobile = window.screen.availWidth < 800;
-
 const chars = [
     {
         key: 0,
@@ -56,7 +54,7 @@ const chars = [
         picture: Garo,
         styles: {marginLeft: '-25vh'},
         quote: [],
-        family: !isMobile && [
+        family: [
             {
                 name: 'Talar',
                 styles: {marginLeft: '-38vh', marginTop: '-5vh'}
@@ -93,7 +91,7 @@ const chars = [
 //and then the sidebar always exists but also is hidden and expands which is also animated?
 
 
-const FamilyTree = () => {
+const FamilyTree = (isMobile) => {
     const [currentChar, setChar] = useState(0);
 	return <div className='familyTreeContainer'>
         <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: isMobile ? '4em' : '5em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
@@ -111,7 +109,7 @@ const FamilyTree = () => {
         <div className='treeChildrenContainer'>
             <FamilyTreeNode currentChar={currentChar} char={chars[2]} onClick={() => setChar(currentChar === 2 ? 0 : 2)}/>
             <FamilyTreeNode currentChar={currentChar} char={chars[1]} onClick={() => setChar(currentChar === 1 ? 0 : 1)}/>
-            <FamilyTreeNode currentChar={currentChar} char={chars[3]} onClick={() => setChar(currentChar === 3 ? 0 : 3)}/>
+            <FamilyTreeNode isMobile={isMobile} currentChar={currentChar} char={chars[3]} onClick={() => setChar(currentChar === 3 ? 0 : 3)}/>
         </div>
     </div>
 }
