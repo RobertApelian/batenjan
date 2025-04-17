@@ -39,34 +39,35 @@ body {
     align-items: center;
   }
 
-  .navigation {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    position: relative;
-    background-color: rgba(0,0,0,.5);
-    cursor: pointer;
-    overflow: hidden
-  }
-
   .cornerDecoration {
     width: 100%;
   }
 
+  .outerContainer {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  .scrollContainer {
+    width: 500%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
   .authorContainer {
     background-color: #d3ab6a;
-    margin: 0px 20%;
+    justify-self: center;
     max-width: 500px;
     height: 100%;
+    min-height: fit-content;
     border-right: 3px solid #292e7b;
     border-left: 3px solid #292e7b;
   }
 
   .aboutPage {
-    height: 100vh;
     background-color: rgba(0,0,0,.7);
+    min-height: 100%;
     color: #FFFFFF;
-    width: 500vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between
@@ -90,6 +91,11 @@ body {
     width: 19vw;
     border-top: 5px #d3ab6a solid;
     border-left: 5px #d3ab6a solid;
+  }
+
+  .selectedTreeContainer {
+    overflow-y: scroll !important;
+    scrollbar-width: none !important;
   }
   
   .familyTreeContainer {
@@ -121,8 +127,6 @@ body {
   }
   
   .textLink {
-    position: absolute;
-    width: 100%;
     text-align: left;
     cursor: pointer;
   }
@@ -155,7 +159,7 @@ body {
   
   @media only screen and (max-width: 760px){
     .navigation {
-      display: none;
+      display: none !important;
     }
 
     .titleContainer {
@@ -171,7 +175,6 @@ body {
       margin: 0;
       max-width: none;
       height: fit-content;
-      width: 100%
     }
 
     .aboutPage {

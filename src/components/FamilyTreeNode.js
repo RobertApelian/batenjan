@@ -4,7 +4,7 @@ const FamilyTreeNode = ({currentChar, char, onClick}) => {
     const isSelected = currentChar === char.key;
     const selectedStyle = isSelected ? {
         height: '100%',
-        width: '100%',
+        width: 'calc(100% - 10px)',
         transition: 'all 300ms',
         display: 'flex',
         justifyContent: 'center'
@@ -32,13 +32,13 @@ const FamilyTreeNode = ({currentChar, char, onClick}) => {
                 </div>
             }
             {isSelected && <div style={{width: '100%', textAlign: 'center', fontFamily: 'EB Garamond', fontSize: '1.5em', color: '#d3ab6a'}}>
-                <div className='textLink' onClick={onClick}>{'◀ Back to tree'}</div>
+                <div className='textLink' onClick={onClick}>{'◀ Back'}</div>
                 <div style={{fontSize: '2em'}}>{char.name}</div>
                 <div style={{marginLeft: '10px', fontSize: '.9em'}}>{char.subtitle}</div>
                 <div style={{marginLeft: '10px', fontSize: '1em'}}>{char.age}</div>
-                <div style={{fontSize: '1em', textAlign: 'left', margin:'15px'}}>
-                    <div style={{fontSize: '4em', marginBottom: '-30px'}}>“</div>
-                    <div style={{margin: '0px 15px', justifyContent: 'center', display:'flex'}}>{char.quote}</div>
+                <div style={{fontSize: '1em', textAlign: 'left'}}>
+                    <div style={{fontSize: '4em', marginBottom: '-.5em'}}>“</div>
+                    <div style={{margin: '0px 2em', justifyContent: 'center', display:'flex'}}>{char.quote}</div>
                     <div style={{fontSize: '4em', textAlign: 'right'}}>” </div>
                 </div>
             </div>}

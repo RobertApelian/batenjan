@@ -11,10 +11,12 @@ of the Middle East and to portray it as something
 other than tragic and war-torn.`;
 
 const Cover = () => {
-	return <div className='authorContainer'>
-		<img alt='Author self portrait' width='100%' src={Me}/>
-        <div style={{fontFamily: 'EB Garamond', fontSize: '3em', textAlign: 'center', color: '#292e7b'}}><b>Rob Mgrdich Apelian</b></div>
-        <div style={{fontFamily: 'EB Garamond', fontSize: '2em', textAlign: 'center', color: '#292e7b'}}>{AuthorText}</div>
+	return <div className='scrollContainer'>
+        <div className='authorContainer'>
+            <img alt='Author self portrait' width='100%' src={Me}/>
+            <div style={{fontFamily: 'EB Garamond', fontSize: '3em', textAlign: 'center', color: '#292e7b'}}><b>Rob Mgrdich Apelian</b></div>
+            <div style={{fontFamily: 'EB Garamond', fontSize: '2em', textAlign: 'center', color: '#292e7b'}}>{AuthorText}</div>
+        </div>
     </div>
 }
 

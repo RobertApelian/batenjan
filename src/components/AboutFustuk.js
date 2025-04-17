@@ -22,9 +22,11 @@ const pages = [
 ];
 
 const AboutFustuk = () => {
-	return <div className='aboutPage'>
-        <CharacterPage {...pages[0]} />
-	</div>
+	return <div className='scrollContainer'>
+        <div className='aboutPage'>
+            <CharacterPage {...pages[0]} />
+        </div>
+    </div>
 }
 
 export default AboutFustuk;
