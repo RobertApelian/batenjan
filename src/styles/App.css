@@ -170,16 +170,17 @@ body {
       color: #d3ab6a;
       font-family: EB Garamond;
       font-size: 1.5em;
+      text-wrap: nowrap;
       position: fixed;
       padding: 5px;
       top: calc(100vh - 5em);
       text-align: center;
-      width: 50%;
+      width: fit-content;
       background-color: rgba(0, 0, 0, .8);
       display: flex !important;
       justify-content: center;
       border-radius: 100px;
-      animation: disappear 15s forwards;
+      animation: disappear 10s forwards;
       touch-action:auto;
     }
 
@@ -193,7 +194,7 @@ body {
       25% {
         opacity: 1;
       }
-      95%{
+      90%{
         opacity: 1;
       }
       100%{
