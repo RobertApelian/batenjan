@@ -42,7 +42,8 @@ const Navigation = ({page, isLeft, setIndex}) => {
             <img alt='' src={Corner} className='cornerDecoration' style={{transform: isLeft ? 'scale(-1,1)' : 'scale(1,1)'}}/>
             <div style={{
                 color: '#292e7b',
-                writingMode: isLeft ? 'sideways-lr' : 'sideways-rl',
+                textWrap: 'nowrap',
+                writingMode: isLeft ? 'rotate(270deg)' : 'rotate(90deg)',
                 fontFamily: 'EB Garamond',
                 fontSize: '3em'}}>
                     {page.title}
