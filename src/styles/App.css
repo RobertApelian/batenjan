@@ -6,6 +6,10 @@ body {
     margin: 0
 }
 
+  .pageIndicator {
+    display: none;
+  }
+
   .longText { 
     color: rgba(0,0,0,0);
     font-family: "EB Garamond";
@@ -160,6 +164,41 @@ body {
   @media only screen and (max-width: 760px){
     .navigation {
       display: none !important;
+    }
+
+    .pageIndicator {
+      color: #d3ab6a;
+      font-family: EB Garamond;
+      font-size: 1.5em;
+      position: fixed;
+      padding: 5px;
+      top: calc(100vh - 5em);
+      text-align: center;
+      width: 50%;
+      background-color: rgba(0, 0, 0, .8);
+      display: flex !important;
+      justify-content: center;
+      border-radius: 100px;
+      animation: disappear 15s forwards;
+      touch-action:auto;
+    }
+
+    @keyframes disappear{
+      0%{
+        opacity: 0;
+      }
+      20%{
+        opacity: 0;
+      }
+      25% {
+        opacity: 1;
+      }
+      95%{
+        opacity: 1;
+      }
+      100%{
+        opacity: 0;
+      }
     }
 
     .titleContainer {

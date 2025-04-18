@@ -43,14 +43,14 @@ const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 const Main = () => {
     const [index, setIndex] = useState(1);
 	return <BindKeyboardSwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
-        {pages.map((page, i) => 
-            <div style={{display: 'flex', width: '100%', height: '100%', minHeight: 'fit-content', justifyContent: 'center', userSelect: 'none'}}>
-                <Navigation isLeft page={pages[i > 0 ? i-1 : pages.length-1]} setIndex={setIndex}/>
-                {page.component}
-                <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>
-            </div>
-        )}
-    </BindKeyboardSwipeableViews>
+            {pages.map((page, i) => 
+                <div style={{display: 'flex', width: '100%', height: '100%', minHeight: 'fit-content', justifyContent: 'center', userSelect: 'none'}}>
+                    <Navigation isLeft page={pages[i > 0 ? i-1 : pages.length-1]} setIndex={setIndex}/>
+                    {page.component}
+                    <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>
+                </div>
+            )}
+        </BindKeyboardSwipeableViews>
 }
 
 export default Main;
