@@ -111,9 +111,9 @@ const FamilyTree = () => {
 	return <div className={`familyTreeContainer ${currentChar && 'selectedTreeContainer'}`} style={{transition: 'background-color .5s', backgroundColor: `rgba(0,0,0,${currentChar ? '.8' : '.3'})`}}>
             <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: '4em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
-                <FamilyTreeNode currentChar={currentChar} char={chars[4]} onClick={() => setChar(currentChar === 5 ? 0 : 5)}/>
+                <FamilyTreeNode currentChar={currentChar} char={chars[4]} onClick={() => setChar(currentChar === 4 ? 0 : 4)}/>
                 {!currentChar && <div className='hconnector' />}
-                <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar === 4 ? 0 : 4)}/>
+                <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar === 5 ? 0 : 5)}/>
             </div>
             {!currentChar && <div className='vconnector' />}
             {!currentChar && <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
