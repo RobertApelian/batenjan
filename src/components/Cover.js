@@ -10,7 +10,7 @@ const Cover = () => {
 		</div>
 		<img alt='Fustuk book cover' src={CoverArt} className='coverImage'/>
 		<div className='pageIndicator'>
-			◀ Swipe for more ▶
+			{'< Swipe for more >'}
         </div>
 	</div>
 }

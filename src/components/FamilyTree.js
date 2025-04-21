@@ -29,7 +29,7 @@ const chars = [
         key: 1,
         name: 'Katah Fustukian',
         subtitle: '',
-        age: '17 (now), 6 months (then)',
+        age: '6 months (then), 17 (now)',
         title: 'Main Character',
         picture: Katah,
         styles: {marginLeft: '-17vh', marginTop: '-6vh'},
@@ -42,7 +42,7 @@ const chars = [
         key: 2,
         name: 'Noori Fustukian',
         subtitle: '',
-        age: '30 (now), 13 (then)',
+        age: '13 (then), 30 (now)',
         title: 'Big Sister',
         picture: Noori,
         styles: {marginLeft: '-32vh', marginTop: '-4vh'},
@@ -58,7 +58,7 @@ const chars = [
         key: 3,
         name: 'Garaked (Garo) Fustukian',
         subtitle: 'and his wife Talar and daughter Tsorineh',
-        age: '29 (now), 11 (then)',
+        age: '11 (then), 29 (now)',
         title: 'Big Brother',
         picture: Garo,
         styles: {marginLeft: '-25vh'},
@@ -80,7 +80,7 @@ const chars = [
         key: 4,
         name: 'Anoush Fustukian',
         subtitle: '',
-        age: '54 (now), 37 (then)',
+        age: '37 (then), 54 (now)',
         title: 'Mom',
         picture: Anoush,
         styles: {marginLeft: '-16vh'},
@@ -111,9 +111,9 @@ const FamilyTree = () => {
 	return <div className={`familyTreeContainer ${currentChar && 'selectedTreeContainer'}`} style={{transition: 'background-color .5s', backgroundColor: `rgba(0,0,0,${currentChar ? '.8' : '.3'})`}}>
             <div style={{fontFamily: 'EB Garamond', width: '100%', fontSize: '4em', color: '#d3ab6a', textAlign: 'center', marginBottom: '3vh', textShadow: '3px 3px rgba(0,0,0,.7)'}}>The Fustukian Family</div>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>
-                <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar === 5 ? 0 : 5)}/>
+                <FamilyTreeNode currentChar={currentChar} char={chars[4]} onClick={() => setChar(currentChar === 5 ? 0 : 5)}/>
                 {!currentChar && <div className='hconnector' />}
-                <FamilyTreeNode currentChar={currentChar} char={chars[4]} onClick={() => setChar(currentChar === 4 ? 0 : 4)}/>
+                <FamilyTreeNode currentChar={currentChar} char={chars[5]} onClick={() => setChar(currentChar === 4 ? 0 : 4)}/>
             </div>
             {!currentChar && <div className='vconnector' />}
             {!currentChar && <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%'}}>

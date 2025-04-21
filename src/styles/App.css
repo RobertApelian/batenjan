@@ -40,12 +40,10 @@ body {
 
   .coverContainer {
     height:100vh;
-    max-width: 100vw;
-    min-width: 80vw;
+    max-width: 95vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
   }
 
   .cornerDecoration {
@@ -61,6 +59,10 @@ body {
     width: 500%;
     overflow-y: scroll;
     scrollbar-width: none;
+  }
+
+  .pagePreview .scrollContainer {
+    width: fit-content;
   }
 
   .authorContainer {
@@ -166,7 +168,7 @@ body {
     margin: -5% 0 0 0;
   }
   
-  @media only screen and (max-width: 760px) {
+  @media only screen and (max-width: 1025px) {
     .navigation {
       display: none !important;
     }
@@ -209,7 +211,7 @@ body {
 
     .titleContainer {
       padding: 0 15px;
-      width: 100%;
+      width: 95%;
       height: auto;
     }
     .titleVector {
@@ -218,8 +220,8 @@ body {
 
     .authorContainer {
       margin: 0;
-      max-width: none;
       height: fit-content;
+      min-height: 100vh;
     }
 
     .aboutPage {
@@ -229,7 +231,9 @@ body {
 
     .coverContainer {
       width: 100%;
+      max-width: none;
       overflow-y: scroll;
+      overflow-x: hidden;
       scrollbar-width: none;
     }
     

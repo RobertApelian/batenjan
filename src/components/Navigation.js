@@ -2,14 +2,15 @@ import React from 'react';
 import Corner from '../images/corner.png';
 
 const Navigation = ({page, isLeft, setIndex}) => {
-    const pagePreview = <div style={{
+    const pagePreview = <div className='pagePreview' style={{
         position: 'absolute',
         height: '100vh',
         right: isLeft && '150px',
         left: !isLeft && '150px',
-        width: '500px',
+        width: 'fit-content',
         overflow: 'hidden',
-        opacity: .5}}>
+        opacity: .5
+        }}>
         {page.component}
     </div>;
 
@@ -43,7 +44,7 @@ const Navigation = ({page, isLeft, setIndex}) => {
             <div style={{
                 color: '#292e7b',
                 textWrap: 'nowrap',
-                writingMode: isLeft ? 'rotate(270deg)' : 'rotate(90deg)',
+                transform: isLeft ? 'rotate(270deg)' : 'rotate(90deg)',
                 fontFamily: 'EB Garamond',
                 fontSize: '3em'}}>
                     {page.title}
