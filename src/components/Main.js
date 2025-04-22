@@ -38,6 +38,20 @@ const pages = [
     }
 ];
 
+// MAYBE DO THIS ANOTHER DAY TO FIX THE WRAPAROUND ON MOBILE
+//const getGoodIndex = index => index < 0 ? pages.length - (index%pages.length) : index%pages.length;
+
+// const slideRenderer = ({index}) => {
+//     const realIndex = getGoodIndex(index);
+
+//     return <div style={{display: 'flex', width: '100%', height: '100%', minHeight: 'fit-content', justifyContent: 'center', userSelect: 'none'}}>
+//         <Navigation isLeft page={getGoodIndex(index-1)} setIndex={setIndex}/>
+//             {pages[index].component}
+//         <Navigation page={getGoodIndex(index+1)} setIndex={setIndex}/>
+//     </div>
+
+// };
+
 const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 const Main = () => {

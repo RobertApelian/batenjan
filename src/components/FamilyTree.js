@@ -4,6 +4,7 @@ import Noori  from '../images/Noori.png'
 import Garo  from '../images/Garo.png'
 import Anoush  from '../images/Anoush.png'
 import Tsoren from '../images/Tsoren.png'
+import Az from '../images/Az.png'
 
 import FamilyTreeNode from './FamilyTreeNode'
 
@@ -92,12 +93,23 @@ const chars = [
     {
         key: 5,
         name: 'Tsoren Fustukian',
-        subtitle: '',
+        subtitle: '"The chef who won the heart of a Div"',
         age: '46 (then)',
         title: 'Dad',
         picture: Tsoren,
         styles: {marginLeft: '-10vh'},
-        quote: <div>...</div>
+        quote: <div>{`... It's just a silly epithet.`}</div>
+    },
+    {
+        key: 6,
+        name: 'Az',
+        subtitle: '',
+        age: 'As old as anything has been',
+        title: '',
+        picture: Az,
+        styles: {marginLeft: '-25vh', marginTop: '-5vh'},
+        quote: <div><div>AAH! Stop! Don't say any more!</div><div>I really want to feel the anticipation, so don't tell me!</div></div>
+
     }
 ];
 
@@ -125,6 +137,9 @@ const FamilyTree = () => {
                 <FamilyTreeNode currentChar={currentChar} char={chars[2]} onClick={() => setChar(currentChar === 2 ? 0 : 2)}/>
                 <FamilyTreeNode currentChar={currentChar} char={chars[1]} onClick={() => setChar(currentChar === 1 ? 0 : 1)}/>
                 <FamilyTreeNode currentChar={currentChar} char={chars[3]} onClick={() => setChar(currentChar === 3 ? 0 : 3)}/>
+            </div>
+            <div style={!currentChar ? {position: 'absolute', top: 'calc(100% - 16vh'} : {width: '100%'}}>
+                <FamilyTreeNode currentChar={currentChar} char={chars[6]} onClick={() => setChar(currentChar === 6 ? 0 : 6)}/>
             </div>
         </div>
 }

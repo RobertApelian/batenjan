@@ -1,4 +1,5 @@
 import React from 'react'
+import Az from '../images/Az.png'
 
 const FamilyTreeNode = ({currentChar, char, onClick}) => {
     const isSelected = currentChar === char.key;
@@ -28,7 +29,7 @@ const FamilyTreeNode = ({currentChar, char, onClick}) => {
                     </div>}
                 </div> :
                 <div className='treeNode' style={selectedStyle} onClick={onClick}>
-                    <img style={{height: '56vh', ...(!isSelected && char.styles)}} src={char.picture} />
+                    <img style={{height: '56vh', zIndex: '1', ...(!isSelected && char.styles)}} src={char.picture} />
                 </div>
             }
             {isSelected && <div style={{width: '100%', textAlign: 'center', fontFamily: 'EB Garamond', fontSize: '1.5em', color: '#d3ab6a'}}>

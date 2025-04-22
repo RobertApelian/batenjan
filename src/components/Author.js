@@ -10,14 +10,14 @@ to celebrate the diversity and cultural excellence
 of the Middle East and to portray it as something
 other than tragic and war-torn.`;
 
-const Cover = () => {
+const Author = () => {
 	return <div className='scrollContainer'>
         <div className='authorContainer'>
             <img alt='Author self portrait' width='100%' src={Me}/>
             <div style={{fontFamily: 'EB Garamond', fontSize: '3em', textAlign: 'center', color: '#292e7b'}}><b>Robert Mgrdich Apelian</b></div>
-            <div style={{fontFamily: 'EB Garamond', fontSize: '2em', textAlign: 'center', color: '#292e7b'}}>{AuthorText}</div>
+            <div style={{fontFamily: 'EB Garamond', fontSize: '1.5em', textAlign: 'center', color: '#292e7b', margin: '15px 5% 0'}}>{AuthorText}</div>
         </div>
     </div>
 }
 
-export default Cover;
+export default Author;
