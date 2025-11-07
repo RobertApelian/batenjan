@@ -16,6 +16,7 @@ const Author = () => {
             <img alt='Author self portrait' width='100%' src={Me}/>
             <div style={{fontFamily: 'EB Garamond', fontSize: '3em', textAlign: 'center', color: '#292e7b'}}><b>Robert Mgrdich Apelian</b></div>
             <div style={{fontFamily: 'EB Garamond', fontSize: '1.5em', textAlign: 'center', color: '#292e7b', margin: '15px 5% 0'}}>{AuthorText}</div>
+            <div style={{fontFamily: 'EB Garamond', fontSize: '1.5em', textAlign: 'center', color: '#292e7b', margin: '15px 5% 0'}}>I do school and library visits! To learn more, email <b>PYRAuthorVisits@prh.com</b></div>
         </div>
     </div>
 }
