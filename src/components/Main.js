@@ -4,6 +4,7 @@ import { bindKeyboard } from 'react-swipeable-views-utils';
 
 import Cover from './Cover';
 import Author from './Author';
+import Modal from './Modal';
 import AboutFustuk from './AboutFustuk';
 import FamilyTree from './FamilyTree';
 import Navigation from './Navigation';
@@ -56,6 +57,7 @@ const BindKeyboardSwipeableViews = bindKeyboard(SwipeableViews);
 
 const Main = () => {
     const [index, setIndex] = useState(1);
+    const [isModalOpen, setModalOpen] = useState(true);
 	return <BindKeyboardSwipeableViews index={index} onChangeIndex={setIndex} slideStyle={{height: '100vh'}}>
             {pages.map((page, i) => 
                 <div style={{display: 'flex', width: '100%', height: '100%', minHeight: 'fit-content', justifyContent: 'center', userSelect: 'none'}}>
@@ -64,6 +66,7 @@ const Main = () => {
                     <Navigation page={pages[(i+1)%pages.length]} setIndex={setIndex}/>
                 </div>
             )}
+            <Modal isOpen={isModalOpen} setOpen={setModalOpen} />
         </BindKeyboardSwipeableViews>
 }
 

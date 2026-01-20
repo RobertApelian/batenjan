@@ -6,6 +6,30 @@ body {
     margin: 0
 }
 
+  .fixedFullscreen { 
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+
+  .modalBackdrop {
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  .modalContent {
+    z-index: 1;
+    color: #d3ab6a;
+    outline: 2px #d3ab6a solid;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #1e2369;
+  }
+
   .pageIndicator {
     display: none;
   }
