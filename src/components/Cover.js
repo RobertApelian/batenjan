@@ -7,11 +7,10 @@ const Cover = () => {
 	return <div className='coverContainer'>
 		<div className='titleContainer'>
 			<TitleVector />
-			<div className='comingSoon'>Coming January 2026</div>
 			<a target="_blank" style={{textDecoration: 'none'}} href='https://www.penguinrandomhouse.com/books/719603/fustuk-a-graphic-novel-by-robert-mgrdich-apelian-illustrated-by-robert-mgrdich-apelian/'>
 				<div className='preorder'>
 					<Pistachio style={{height: '.7em'}}/>
-					{' Preorder Now '}
+					{' Read Now! '}
 					<Pistachio style={{height: '.7em', transform: 'scaleX(-1)'}}/>
 				</div>
 			</a>
